@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --cinza-fundo: #49484A ;
+    --cinza2: #343135;
+    --cinza3: #D9D9D9;
+    --laranja: #D9531E;
+    --cor-fonte: #EAF1F3;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--cinza-fundo);
+    color: var(--cor-fonte);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: var(--cinza2);
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding: 2%;  
+    width: 80%;
+    height: 100vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+section.images {
+    position: absolute;
+    top:3%;
+    width: 14%;
+}
+
+img{
+    width: 100%;
+    padding: 2%;
+}
+
+h1{
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.itens{
+    display: flex;  
+    justify-content: flex-end ;
+    align-items: baseline;
+    margin-top: -2%;
+}
+
+button{
+    background-color: var(--cinza3);
+    font-size: large;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    margin-left: 3%;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+p#qntItens{
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 50px 5px 50px ;
+    background-color: var(--cinza3);
+    color: black;
+    border-radius: 30px;
+    margin-right: 3%;
+}
+
+p.nomePrato{
+    font-size: 150%;
+}
+
+p#preco{
+    margin-top: -4px;
+}
