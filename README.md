@@ -39,10 +39,3 @@ Utilizamos uma paleta de cor mais escura, já que a proposta do estab
 ![Demonstração](https://i.imgur.com/h9R1fsW.gif)
 
 
-![Logo](https://i.pinimg.com/originals/d0/33/fa/d033fa7bd889bf87a5ccc68e13f4bb2e.png)
-
-
-## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victorhugopalma/)
-[![twitter](https://img.shields.io/badge/instagram-B510D0?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_victor.palma_/)
-
