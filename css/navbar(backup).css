@@ -145,11 +145,17 @@
     margin-bottom: 0.5rem;
   }
   
-
+  button {
+    border-radius: 0;
+  }
   
-
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
   
   input,
+  button,
   select,
   optgroup,
   textarea {
@@ -159,16 +165,30 @@
     line-height: inherit;
   }
   
+  button,
   input {
     overflow: visible;
   }
   
-
+  button,
   select {
     text-transform: none;
   }
   
+  button,
+  html [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
   
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
   
   input[type="radio"],
   input[type="checkbox"] {
@@ -209,6 +229,11 @@
   
   progress {
     vertical-align: baseline;
+  }
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
   }
   
   [type="search"] {

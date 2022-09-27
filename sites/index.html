@@ -25,7 +25,7 @@
         <section id="nav-bar">
 
     <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -51,16 +51,23 @@
         <h1>Faça seu Pedido</h1>
 
     <!--itens-->
-        <p class="nomePrato">Drink Olho Grego</p>
-        <p id="preco">R$29,99</p>
-        
-        <div class="itens">
-                <p id="qntItens">0</p>
+    <section id="produtos">
+            <label for="nomePrato" class="nomePrato">Drink Olho Grego</label><br>
+            <label for="preco" id="preco">R$29,99</label>
+
+            <div class="itens">
+                <label id="qntItens">0</label>
                 <button id="adicionar" onclick="adicionar()" >+</button>
                 <button id="remover" onclick="remover()">-</button>
-        </div>
-    </main>
+            </div> 
+            
+    </section>
+    <button class="finalizar">
+        Finalizar Pedido
+    </button>
+            
 
+</main>
     <script src="/scripts/script.js"></script>
 </body>
 </html>
