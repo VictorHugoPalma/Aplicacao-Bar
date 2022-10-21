@@ -1,0 +1,49 @@
+https://www.macoratti.net/asp_50.htm
+
+create database bd_loja;
+use bd_loja;
+
+//PRODUTOS
+create table categoria (
+    id_categoria int not null auto_increment,
+    nome_categoria varchar(20) not null,
+    primary key(id_categoria),
+);
+
+create table comida(
+    id_comida int not null auto_increment,
+    nome_comida varchar(50) not null,
+    preco_comida varchar(50) not null,
+    categoria_comida int not null,
+
+    primary key(id_comida),
+    foreign key(categoria_comida)
+);
+
+//COBRANÇA
+create table cliente (
+    cpf_cliente varchar not null,
+    primary KEY(cpf_cliente)
+);
+
+create table pedido (
+    id_pedido int not null auto_increment;
+    data_pedido datetime not null,
+    pagamento_pedido BIT not null,
+    valor_pedido money not null,
+
+    primary KEY(id_pedido)
+);
+
+create table itens_pedido (
+    id_item int not null auto_increment;
+    pedidoID int not null,
+    comidaID int not null,
+    quantidade_item int not null,
+    primary KEY(id_item),
+
+    foreign key(pedidoID),
+    foreign key(comidaID)
+);
+
+

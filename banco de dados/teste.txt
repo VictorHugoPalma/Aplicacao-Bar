@@ -1,0 +1,20 @@
+create table tb_bebida (
+    id_bebida int not null auto_increment,
+    nome_bebida varchar (50) not null,
+    preco_bebida money not null
+    primary KEY(id_bebida)
+);
+
+create table tb_porcao (
+    id_porcao int not null auto_increment,
+    nome_porcao varchar (50) not null,
+    preco_porcao money not null
+    primary KEY(id_porcao)
+);
+
+create table tb_lanche (
+    id_lanche int not null auto_increment,
+    nome_lanche varchar (50) not null,
+    preco_lanche money not null
+    primary KEY(id_lanche)
+);
