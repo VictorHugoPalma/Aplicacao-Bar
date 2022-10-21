@@ -1,6 +1,6 @@
 https://www.macoratti.net/asp_50.htm
-
-create database bd_loja;
+se bd_loja
+create databa;
 use bd_loja;
 
 //PRODUTOS
@@ -40,10 +40,12 @@ create table itens_pedido (
     pedidoID int not null,
     comidaID int not null,
     quantidade_item int not null,
+    valor_item int not null,
     primary KEY(id_item),
 
     foreign key(pedidoID),
-    foreign key(comidaID)
+    foreign key(comidaID),
+    foreign key(valor_item)
 );
 
 
