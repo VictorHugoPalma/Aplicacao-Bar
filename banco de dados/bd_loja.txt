@@ -1,7 +1,6 @@
 https://www.macoratti.net/asp_50.htm
-se bd_loja
-create databa;
-use bd_loja;
+create database db_loja;
+use db_loja;
 
 //PRODUTOS
 create table categoria (
